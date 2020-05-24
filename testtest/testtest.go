@@ -19,3 +19,5 @@ func main() {
 	fmt.Println(colors[2])
 	fmt.Println(colors)
 }
+
+]
