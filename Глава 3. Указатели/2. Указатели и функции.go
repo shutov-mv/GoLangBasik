@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func ChangeValue(x int) {
+func changeValue(x int) {
 	x = x * x
 }
 func changeValue1(x *int) {
