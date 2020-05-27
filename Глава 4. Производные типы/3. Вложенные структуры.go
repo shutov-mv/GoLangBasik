@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type contact struct {
 	email string
 	phone string
@@ -10,14 +12,17 @@ type person struct {
 	age         int
 	contactInfo contact
 }
-func main () {
-	var tom = person {
+
+func main() {
+	var tom = person{
 		name: "Tom",
-		age: 24,
-		contactInfo: contact {
+		age:  24,
+		contactInfo: contact{
 			email: "tom@damain.local",
 			phone: "88887775454",
 		},
 	}
-	tom.contactInfo.email = 
+	tom.contactInfo.email = "stom@damain.local"
+	fmt.Println(tom.contactInfo.email)
+	fmt.Println(tom.contactInfo.phone)
 }
